@@ -8,10 +8,8 @@ def graficar_acel(v):
   a_z = []
   i = 0
   for line in file:
-      #aux = line
       aux = line.replace("\n",'')
       aux = aux.split('\t')
-      #print(aux)
       try:
         a_x.append(float(aux[0]))
         a_y.append(float(aux[1]))
