@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 def graficar_acel(v):
+  #Aquí se coloca la dirección de los archivos
   file = open("C:\\Users\\Win\\Documents\\Arduino\\PI_1\\acelerómetro ODR = "+ str(v)+"Hz.txt", 'r')
-  #file = open("acelerómetro ODR = "+ str(v)+"Hz.txt", 'r')
   a_x = []
   a_y = []
   a_z = []
@@ -32,7 +32,7 @@ def graficar_acel(v):
   plt.grid()
   plt.show()
 
-graficar_acel(952) 
-# freq = [10, 50, 119, 238, 476, 952]
-# for i in freq:
-#   graficar_acel(i) 
+#graficar_acel(476) -> tiene problemas en el txt
+freq = [10, 50, 119, 238, 476, 952] #conjunto de frecuencias utilizadas - ODR 
+for i in freq:
+   graficar_acel(i) 
