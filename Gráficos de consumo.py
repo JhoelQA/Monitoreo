@@ -6,7 +6,7 @@ import pandas as pd
 #data = pd.read_csv(file, sep = ";", usecols = ["Time[us]", "Voltage[V]", "Current[mA]","Energy[mAh]"])
 
 #En PC
-file = open("C:\\Users\\Win\\Desktop\\IB2023-2\\PI\\Data.log", 'r')
+file = open("C:\\Users\\Win\\Desktop\\IB2023-2\\PI\\data.log", 'r')
 data = pd.read_csv(file, sep = ";", usecols = ["Time[us]", "Voltage[V]", "Current[mA]","Energy[mAh]"])
 
 #Convierto el tiempo a segundos
