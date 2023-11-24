@@ -44,7 +44,14 @@ ax[1].grid()
 fig, ax = plt.subplots()
 t_horas = t/3600
 ax.plot(t_horas[idx_E_min:idx_tmax], data["Energy[mAh]"][idx_E_min:idx_tmax])
-ax.set(xlabel='Tiempo [s]', ylabel = "Energy[mAh]")
+ax.set(xlabel='Tiempo [h]', ylabel = "Energy[mAh]")
 plt.grid()
+#Aporte final 
+idx_t1h = np.where((t_horas - 1)>0.0001)[0][0]
+print("Índice en aproximadamente t = 1h :   ", idx_t1h)
+print("t[", idx_t1h, "] = ", t_horas[idx_t1h])
+print("Corriente conumida promedio: ", data["Energy[mAh]"][idx_t1h], "mA")
+
+
 
 plt.show()
