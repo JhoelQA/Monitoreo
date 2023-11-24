@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 def graficar_acel(v):
   #Aquí se coloca la dirección de los archivos
-  file = open("C:\\Users\\Win\\Documents\\Arduino\\PI_1\\acelerómetro ODR = "+ str(v)+"Hz.txt", 'r')
+  file = open("C:\\Users\\Win\\Documents\\Arduino\\PI_1\\Movimientos rápidos - ORD = "+ str(v)+".txt", 'r')
   a_x = []
   a_y = []
   a_z = []
