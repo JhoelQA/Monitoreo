@@ -48,7 +48,7 @@ ax.set(xlabel='Tiempo [h]', ylabel = "Energy[mAh]")
 plt.grid()
 #Aporte final 
 idx_t1h = np.where((t_horas - 1)>0.0001)[0][0]
-print("Índice en aproximadamente t = 1h :   ", idx_t1h)
+print("\nÍndice en aproximadamente t = 1h :   ", idx_t1h)
 print("t[", idx_t1h, "] = ", t_horas[idx_t1h])
 print("Corriente conumida promedio: ", data["Energy[mAh]"][idx_t1h], "mA")
 
